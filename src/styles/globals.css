@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+/* body {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.35;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+body {
+  font-size: 0;
+}
+#__next {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.35;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SVN-Aguda-Black";
+  src: url("/fontface/SVN-Aguda-Black.otf");
+}
+@font-face {
+  font-family: "SVN-Aguda-Regular";
+  src: url("/fontface/SVN-Aguda-Regular.otf");
+}
+@font-face {
+  font-family: "Race-Sport";
+  src: url("/fontface/Race Sport.ttf");
+}
+
+.Aguda-Black {
+  font-family: "SVN-Aguda-Black";
+}
+.Aguda-Regular {
+  font-family: "SVN-Aguda-Regular";
+}
+.Font-OpenSans {
+  font-family: "Open Sans", sans-serif;
+}
+.open-sidebar .sidebar {
+  opacity: 1;
+  visibility: visible;
+}
+.bg-overlay-sidebar {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.open-sidebar .bg-overlay-sidebar {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebar {
+  transition: all 0.3s;
+}
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham .top {
+  stroke-dasharray: 40 172;
+}
+.ham .middle {
+  stroke-dasharray: 40 111;
+}
+.ham .bottom {
+  stroke-dasharray: 40 172;
+}
+.open-sidebar .ham .top {
+  stroke-dashoffset: -132px;
+}
+.open-sidebar .ham .middle {
+  stroke-dashoffset: -71px;
+}
+.open-sidebar .ham .bottom {
+  stroke-dashoffset: -132px;
+}
+body {
+  @apply scrollbar-thin 
+  scrollbar-thumb-[#5AD4B4]
+  scrollbar-track-[#0D0A1A];
+}
+.sidebar li button.active {
+  @apply text-[#5AD4B4]
+  bg-transparent;
+}
+.newshome {
+  @apply after:lg:block
+  after:hidden
+  after:absolute
+  after:left-0
+  after:top-0
+  after:w-[463px]
+  after:h-[233px]
+  after:bg-pattern01rfm
+  before:z-20
+  before:lg:block
+  before:hidden
+  before:absolute
+  before:right-0
+  before:bottom-0
+  before:w-[332px]
+  before:h-[160px]
+  before:bg-pattern02rfm;
+}
+.item-ctrl {
+  @apply after:duration-200
+  after:bg-colorcs-0D0A1A
+  after:bg-opacity-75
+  after:inset-0
+  after:absolute
+  after:rounded-[7px];
+}
+.item-ctrl:hover,
+.item-ctrl.active {
+  @apply after:opacity-100
+  after:bg-opacity-0
+  border-colorcs-43c8ce;
+}
+.install-app {
+  @apply after:absolute
+  after:left-0
+  after:md:top-0
+  after:-top-10
+  after:w-[774px]
+  after:h-[174px]
+  after:bg-pattern05rfm
+  before:absolute
+  before:right-0
+  before:md:bottom-0
+  before:-bottom-10
+  before:w-[804px]
+  before:h-[221px]
+  before:bg-pattern06rfm;
+}
+.bg-intropage {
+  @apply after:lg:bg-overlayintro
+  after:bg-overlaymobile
+  after:md:bg-top
+  after:bg-bottom
+  after:bg-cover
+  after:absolute
+  after:inset-0
+  after:bg-fillSize;
+}
+.customization {
+  @apply after:md:block
+  after:hidden
+  after:absolute
+  after:right-0
+  after:top-0
+  after:w-[289px]
+  after:h-[178px]
+  after:bg-pattern07rfm
+  before:md:block
+  before:hidden
+  before:absolute
+  before:left-0
+  before:bottom-0
+  before:w-[252px]
+  before:h-[126px]
+  before:bg-pattern08rfm;
+}
+.swiper-bodycar .swiper-slide-active li {
+  @apply !scale-100;
+}
+.control-tabs-custom ul li .rou-iteimg {
+  @apply bg-colorcs-0a1222
+  bg-opacity-60;
+}
+.swiper-multicustom .swiper-slide-active figure {
+  @apply border-white
+  border-2;
+}
+@tailwind components;
+@tailwind utilities;
+
+/* Font */
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.racesport {
+  font-family: "Race-Sport", sans-serif;
+}
+/* End Font */
+
+/* Button */
+
+/* End Button */
+
+.map_btn-highlight {
+  filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.68));
+}
+.nftcar {
+  background: url("/images/NFTCar-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.roadmap {
+  background: url("/images/roadmap-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.whiteToGray {
+  background: linear-gradient(90.59deg, #ffffff 4.67%, #565656 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Scroll bar custom */
+
+.scrollbar-nftcar::-webkit-scrollbar {
+  width: 6px;
+  height: 328.5px;
+}
+@media only screen and (max-width: 1440px) {
+  .scrollbar-nftcar::-webkit-scrollbar {
+    width: unset;
+    height: 0.3rem;
+  }
+}
+
+.scrollbar-nftcar::-webkit-scrollbar-track {
+}
+
+.scrollbar-nftcar::-webkit-scrollbar-thumb {
+  background: rgba(63, 67, 80, 0.52);
+  border-radius: 3px;
+}
+
+/*End scroll bar custom */
+
+model-viewer {
+  width: 100vh;
+  height: 90vh;
+}
+
+@media only screen and (max-width: 1440px) {
+  model-viewer {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 883px) {
+  model-viewer {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+  model-viewer {
+    height: 40vh;
+  }
+}
+
+.car_3d-model {
+  background: url("/images/car_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 883px) {
+  .car_3d-model {
+    background-size: 45rem 40rem;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+  .car_3d-model {
+    background-size: 35rem 30rem;
+  }
+}
+
+.footer_icon_item:hover .footer_icon {
+  fill: white;
+}
+.footer_icon {
+  transition: all 0.15s;
+}
